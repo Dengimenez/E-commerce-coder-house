@@ -1,0 +1,44 @@
+.contenedor {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px; 
+    background-color: black;
+    height: 100%;
+  }
+  
+  .lista {
+    list-style: none; 
+    display: flex; 
+    gap: 40px; 
+    
+  }
+  .lista li:hover {
+    background-color: #ffffff;
+    color: aqua;
+    
+  }
+  .lista a {
+    text-decoration: none;
+    color: #ffffff; /* Color de texto para los enlaces */
+    font-size: 20px;
+    margin-right: 50px;
+  }
+  
+  .lista a :hover{
+    color: black;
+    background-color: white;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: 150px;
+    align-items: left;
+    text-align: left;
+    margin-left: 30px;
+    border-radius: 8px;
+  }
+  .card{
+    margin-right: 12px;
+    align-items: center;
+  }

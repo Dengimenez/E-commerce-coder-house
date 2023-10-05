@@ -1,0 +1,26 @@
+.cartwidget {
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 80%; /* Asegura que el contenedor tenga la altura completa del Navbar */
+  }
+  
+  .faShoppingCart{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  .centeredContainer {
+    display: flex;
+    align-items: center; /* Centra horizontalmente el contenido */
+  }
+  
+  .item-count {
+    margin-right: 10px; /* Añade un margen entre el número de elementos y el ícono */
+  }
+  .card{
+      margin-right: 50px;
+      margin-bottom: 45px;
+    
+  }
