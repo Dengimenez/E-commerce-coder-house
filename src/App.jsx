@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
  import CardWidget from './components/Cardwidget/Cardwidget';
  import ItemListContainer from './components/ItemListContainer/ItemListContainer';
  import NavBar from './components/navbar/NavBar';
- import './App.css';
+ import Footer from './components/Footer/Footer';
+ import './App.css'; 
 
 function App() {
    return (
@@ -18,9 +19,11 @@ function App() {
            <Route path="/Contacto" element={<ContactoPage />} /> 
            <Route path="/card" element={<CardWidget />} /> 
            <Route path="/ItemListContainer" element={<ItemListContainer/>} />
+           <Route path="/Footer" element={<Footer/>} />
           </Routes>
        </BrowserRouter>
        <ItemListContainer greeting = "¡Bienvenidos a nuestro e-commerce de HOLIC !"/>
+       <Footer/>
      </div>
     
    );
