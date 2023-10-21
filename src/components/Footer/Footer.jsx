@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className={styles.footerr}>
     <small>© 2023 <b> HOLIC </b> - Todos los Derechos Reservados.</small>
-    <p> CREADO POR DENISE GIMENEZ </p>
+    <h2> CREADO POR DENISE GIMENEZ </h2>
     </div>
   )
 }
