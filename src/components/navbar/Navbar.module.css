@@ -3,7 +3,7 @@
     justify-content: space-between; 
     align-items: center; 
     padding: 15px; 
-    background-color: black;
+    background-color: rgb(221, 221, 221);
     height: 100%;
   }
   
@@ -15,18 +15,18 @@
   }
   .lista li:hover {
     background-color: #ffffff;
-    color: aqua;
+    color: rgb(0, 0, 0);
     
   }
   .lista a {
     text-decoration: none;
-    color: #ffffff; /* Color de texto para los enlaces */
+    color: #000000; 
     font-size: 20px;
     margin-right: 50px;
   }
   
   .lista a :hover{
-    color: black;
+    color: rgb(0, 0, 0);
     background-color: white;
   }
   

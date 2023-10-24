@@ -1,21 +1,30 @@
 import React from 'react'
 import styles from "./Contacto.module.css"
-import { Link } from 'react-router-dom';
+import remeron from "../imagenes/remeron.webp"
+
 
 const ContactoPage = () => {
-
-    // const imageUrl = 'https://png.pngtree.com/png-clipart/20210308/original/pngtree-brown-cartoon-puppy-clipart-puppy-clipart-png-image_5731312.jpg';
-    
-    return (
-    <div className={styles.denu}>
-    <Link to="/">
-        <button>Volver al Home</button>
-    </Link>
-    
-      <p> Aca se muestran los contactos de la pagina </p>
-      {/* <img src={imageUrl} alt="#" /> */}
+return (
+    <div className={styles.aboutUs}>
       
+      <div className={styles.foto}>
+      <img src={remeron} alt="foto" />
+      </div>
+
+    <div className={styles.about}>
+      <h1>About Holic </h1>
+      <h2>HOLIC emerge creando una nueva experiencia</h2>
+      <p> La nueva colección compone el balance perfecto.
+        HOLIC presenta una exquisita selección de prendas atemporales y se posiciona como referente 
+        para la mujer contemporanea.
+
+        Los tejidos nobles de temporada, confeccionados en hilados naturales, aportan suavidad y 
+        distinción a las prendas de verano.
+        Desarrollando un concepto transformador y colocando a lo esencial dentro de la cadena de valor, 
+        RISE se origina para vestir al hombre consciente. </p>
+      </div>
     </div>
+
   )
 }
 

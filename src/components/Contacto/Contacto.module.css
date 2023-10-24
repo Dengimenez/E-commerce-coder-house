@@ -1,11 +1,33 @@
-.denu{
-    background-color: rgb(255, 255, 255);
+.aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+  }
+  
+.about {
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+.about h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: monospace;
+    text-decoration: underline;
 }
 
-p{
-    font-family: serif;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-size: 50px;
-    text-align: center;
+.about h2{
+font-size: 35px;
 }
+
+.about p{
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.foto img{
+    text-align: center; 
+    max-height: 800px;
+    width: auto;
+  }

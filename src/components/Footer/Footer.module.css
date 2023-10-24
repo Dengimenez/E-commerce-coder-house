@@ -1,13 +1,20 @@
 
-   .footerr{
-    background-color: black;
-    color: aliceblue;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    font-size: 15px;
-  } 
+.footerr{
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  text-align: center;
+  padding: 20px 20px; 
+  background-color: #dfd6e0; 
+ }
+ 
+ .small {
+  font-size: 15px;
 
+}
+
+.footerr h2 {
+  font-size: 20px;
+}
 
 

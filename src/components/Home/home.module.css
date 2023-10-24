@@ -1,0 +1,42 @@
+h1{
+  color: black;
+  font-size: 50px;
+  font-family: monospace;
+  text-align: center;
+  text-decoration: overline;
+  padding-top: 100px;
+} 
+
+.carousel {
+margin: 0px;
+background-color: #f0f0f0;
+align-items: center;  
+}
+
+.carousel img {
+ /* width: 900px; 
+height: 900px;  */
+padding-bottom: 20px;
+border-radius: 40px; 
+padding-left: 300px;
+align-items: center;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+.titulo {
+  font-size: 50px;
+  animation: fadeIn 1.5s ease;
+  font-weight: bold;
+ padding-bottom:  80px;
+  
+}
+  

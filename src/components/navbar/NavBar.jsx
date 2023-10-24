@@ -12,15 +12,15 @@ const NavBar = () => {
       <div className={styles.logo}>
       <Link to="/"> 
           <img src={miImagen} alt="Logo" />
-        </Link>
-      {/* <img src={miImagen} alt="Logo" /> */}
+      </Link>
+      
 
       </div>
 
     <ul className={styles.lista}>
-      <a href="/">Inicio</a>
-      <a href="/productos">Productos</a>
-      <a href="/Contacto">Contacto</a> 
+      <a href="/">HOME</a>
+      <a href="/productos">PRODUCTS</a>
+      <a href="/Contacto">ABOUT US</a> 
     </ul>
 
     <CartWidget/>
