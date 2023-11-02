@@ -1,0 +1,42 @@
+.carrito {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .producto {
+    margin-bottom: 30px;
+    padding: 5px;
+    list-style: none;
+
+  }
+  
+  .producto button {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .producto button:hover {
+    background-color: #ff3336;
+  }
+  .quitarButton {
+    cursor: pointer;
+    margin-top: 0px;
+    
+  }
+  
+  .quitarButton:hover {
+    color: red;
+    margin-right: 10px;
+    
+  }
+  
+  .eliminado {
+   
+    text-decoration: line-through; 
+  }

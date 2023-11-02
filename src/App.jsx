@@ -6,27 +6,26 @@ import NavBar from './components/navbar/NavBar';
 import Footer from './components/Footer/Footer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Home from './components/Home/Home'
-import notFound from './components/notFound/notFound';
+import Carrito from '../src/components/imagenes/Carrito.gif'
 import './App.css';
 
 function App() {
   return (
-    <cartContext>
-    <Router>
+    <div>
+      <Router>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/productos" element={<Productos />} />
           <Route path="/contacto" element={<ContactoPage />} />
           <Route path="/detail" element={<ItemDetailContainer />} />
+          <Route path="/carrito" element={<Carrito />} />
           <Route path="/productos/:id" element={<ItemDetailContainer />} />
-          <Route path="/productos/:category" element={<ItemDetailContainer />} />
-          <Route path="*" element={<notFound/>} />
         </Routes>
-    </Router>
+        {/* <ItemListContainer greeting="" /> */}
+      </Router>
       <Footer />
-     </cartContext>
-   
+    </div>
   );
 }
 

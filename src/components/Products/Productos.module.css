@@ -4,7 +4,7 @@
   gap: 30px; 
   justify-content: center;
   align-items: center;
-  padding-left: 400px;
+  padding-left: 100px;
 }
 
 .productCard {
@@ -16,7 +16,15 @@
 }
 
 .productImage {
-  width: 50%;
+  width: 100%;
   height: auto;
   
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; 
+  justify-content: center;
+  align-items: center;
 }
