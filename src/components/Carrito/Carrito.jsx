@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './Carrito.module.css';
-import quitarCarrito from '../imagenes/delete.gif'; 
+import quitarCarrito from '../imagenes/tacho.gif'; 
 
-const Carrito = ({ carrito, onEliminarDelCarrito }) => {
+const carrito = ({ carrito, onEliminarDelCarrito }) => {
   const handleEliminarClick = (producto) => {
     onEliminarDelCarrito(producto);
-    
   };
 
   const calcularTotal = () => {
@@ -16,7 +15,7 @@ const Carrito = ({ carrito, onEliminarDelCarrito }) => {
     <div className={styles.carrito}>
       <h2>Carrito de Compras</h2>
       <ul>
-        {carrito.map((producto) => (
+        { carrito.map((producto) => (
           <li key={producto.id} className={styles.producto}>
             {producto.title} - ${producto.price} 
             <img
@@ -31,6 +30,8 @@ const Carrito = ({ carrito, onEliminarDelCarrito }) => {
       <p>Total: ${calcularTotal()}</p>
     </div>
   );
+
+
 };
 
-export default Carrito;
+export default carrito;

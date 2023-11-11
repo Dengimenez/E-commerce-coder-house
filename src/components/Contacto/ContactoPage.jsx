@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./Contacto.module.css"
-import remeron from "../imagenes/remeron.webp"
+import remeron from "../imagenes/fundas.jpeg"
 
 
 const ContactoPage = () => {

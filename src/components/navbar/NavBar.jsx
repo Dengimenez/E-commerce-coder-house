@@ -7,10 +7,7 @@ import BolsaDecoMpras from "../imagenes/Bolsa.png"
 
 const NavBar = () => {
   return (
-    
 <div className={styles.contenedor}>
-
-
       <div className={styles.logo}>
       <Link to="/"> 
           <img src={miImagen} alt="Logo" />
