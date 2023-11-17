@@ -1,29 +1,26 @@
- h1{
+h1 {
   color: black;
   font-size: 50px;
   font-family: monospace;
   text-align: center;
   text-decoration: overline;
   padding-top: 100px;
-}  
+}
 
-/* .carousel {
-margin: 0px;
-background-color: #f0f0f0;
-align-items: center;  
-} */
+.carousel {
+  margin-bottom: 200px;
+  background-color: #ffffff;
+  align-items: center;
+}
 
-/* .carousel img {
-  width: 900px; 
-height: 900px;  
-padding-bottom: 20px;
-border-radius: 40px; 
-padding-left: 300px;
-align-items: center;
-} */
+.carousel img {
+  width: 100%; 
+  height: auto; 
+  max-width: 1500px; 
+  margin: 0 auto; 
+}
 
-
-/* @keyframes fadeIn {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -36,28 +33,37 @@ align-items: center;
   font-size: 50px;
   animation: fadeIn 1.5s ease;
   font-weight: bold;
- padding-bottom:  80px;
-  
-} */
-/* .banner{
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-} */
-.banner img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  padding-bottom: 80px;
 }
 
-.pagos{
-  width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 28px;
-    padding: 35px 0px;
-    background-color:rgba(61, 58, 58, 0.264);
-    color: #000000;
-    justify-items: center;
+/* Estilos para tabletas */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px; 
+  }
+
+  .carousel {
+    margin-bottom: 100px; 
+  }
+
+  .titulo {
+    font-size: 30px; 
+  }
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px; 
+    padding-top: 50px; 
+  }
+
+  .carousel {
+    margin-bottom: 50px; 
+  }
+
+  .titulo {
+    font-size: 20px; 
+    padding-bottom: 40px; 
+  }
 }

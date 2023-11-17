@@ -1,11 +1,17 @@
 import React from 'react'
-import styles from "./Contacto.module.css"
+import styles from "./About.module.css"
 import remeron from "../imagenes/fundas.jpeg"
+import NavBar from '../navbar/NavBar'
+import Footer from '../Footer/Footer'
 
 
-const ContactoPage = () => {
+const About = () => {
 return (
+  <div> 
+  <div>
+     <NavBar/>
     <div className={styles.aboutUs}>
+     
       
       <div className={styles.foto}>
       <img src={remeron} alt="foto" />
@@ -24,8 +30,10 @@ return (
         RISE se origina para vestir al hombre consciente. </p>
       </div>
     </div>
-
+    </div>
+    <Footer/>
+    </div>
   )
 }
 
-export default ContactoPage;
+export default About;

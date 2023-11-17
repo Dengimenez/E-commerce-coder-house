@@ -1,37 +1,53 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
 import styles from './Carrito.module.css';
-import quitarCarrito from '../imagenes/tacho.gif'; 
+import NavBar from '../navbar/NavBar';
 
-const carrito = ({ carrito, onEliminarDelCarrito }) => {
-  const handleEliminarClick = (producto) => {
-    onEliminarDelCarrito(producto);
-  };
+const Carrito = () => {
+  const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
 
-  const calcularTotal = () => {
-    return carrito.reduce((total, producto) => total + producto.price, 0);
+  const handleVaciar = () => {
+    vaciarCarrito();
   };
 
   return (
-    <div className={styles.carrito}>
-      <h2>Carrito de Compras</h2>
-      <ul>
-        { carrito.map((producto) => (
-          <li key={producto.id} className={styles.producto}>
-            {producto.title} - ${producto.price} 
-            <img
-              src={quitarCarrito}
-              alt="Icono de Eliminar"
-              className={styles.quitarButton}
-              onClick={() => handleEliminarClick(producto)}
-            />
-          </li>
-        ))}
-      </ul>
-      <p>Total: ${calcularTotal()}</p>
+    
+    <div> 
+      <NavBar/>
+    <div className={styles.container}>
+      <h1 className={styles.mainTitle}>Carrito</h1>
+
+      {carrito.map((prod) => (
+        <div className={styles.product} key={prod.id}>
+          <br />
+          <h3>{prod.titulo}</h3>
+          <img src={prod.image} alt={prod.titulo} className={styles.productImage} />
+          <p>Precio unit: ${prod.price}</p>
+          <p>Precio total: ${prod.price * prod.cantidad}</p>
+          <p>Cant: {prod.cantidad}</p>
+          <br />
+        </div>
+      ))}
+
+      {carrito.length > 0 ? (
+        <>
+          <h2 className={styles.totalPrice}>Precio total: ${precioTotal()}</h2>
+          <div className={styles.actions}>
+            <button onClick={handleVaciar}>Vaciar</button>
+            <Link to="/checkout" className={styles.linkToCheckout}>
+              Finalizar compra
+            </Link>
+          </div>
+        </>
+      ) : (
+        <h2 className={styles.cartt}>El carrito está vacío 🥺</h2>
+      )}
     </div>
+    </div>
+    
+    
   );
-
-
 };
 
-export default carrito;
+export default Carrito;

@@ -1,44 +1,77 @@
+/* Estilos para desktop */
 .contenedor {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 15px; 
-    background-color: rgba(255, 255, 255, 0.332);
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.332);
+  height: 100%;
+  border: solid #eae4e4;
+}
+
+.lista {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.lista li:hover {
+  background-color: #ffffff56;
+  color: rgb(0, 0, 0);
+}
+
+.lista a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.lista a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.339);
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  align-items: left;
+  text-align: left;
+  margin-left: 30px;
+  border-radius: 8px;
+}
+
+.card {
+  margin-right: 12px;
+  align-items: center;
+}
+
+/* Estilos para tabletas */
+@media screen and (max-width: 768px) {
+  .contenedor {
+    flex-direction: column; 
+    height: auto; 
   }
-  
+
   .lista {
-    list-style: none; 
-    display: flex; 
-    gap: 40px; 
-    
+    flex-direction: column; 
+    gap: 20px; 
   }
-  .lista li:hover {
-    background-color: #ffffff56;
-    color: rgb(0, 0, 0);
-    
-  }
+
   .lista a {
-    text-decoration: none;
-    color: #000000; 
-    font-size: 20px;
-    margin-right: 50px;
+    font-size: 16px; 
+    margin-right: 0; 
   }
-  
-  .lista a :hover{
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.339);
-  }
-  
+
   .logo img {
-    width: 150px;
-    height: 150px;
-    align-items: left;
-    text-align: left;
-    margin-left: 30px;
-    border-radius: 8px;
+    margin-left: 0; 
+    margin-bottom: 10px; 
   }
-  .card{
-    margin-right: 12px;
-    align-items: center;
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 480px) {
+  .lista a {
+    font-size: 14px; 
   }
+}

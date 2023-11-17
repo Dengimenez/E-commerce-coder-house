@@ -1,0 +1,74 @@
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.menu1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #000101ee;
+  color: white;
+  padding: 10px;
+}
+
+.dropdown {
+  margin-top: 50px;
+  font-family: serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+label {
+  margin-right: 10px;
+  color: bisque;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  color: rgb(0, 0, 9);
+}
+
+.PRO {
+  color: bisque;
+}
+.Label{
+  margin: 10px;
+  align-items: center;
+}
+
+/* Estilos para tabletas */
+@media screen and (max-width: 768px) {
+  .menu1 {
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .dropdown {
+    margin-top: 20px; 
+    font-size: large; 
+  }
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 480px) {
+  .menu1 {
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .dropdown {
+    margin-top: 10px; 
+    font-size: medium; 
+  }
+   .label {
+    display: none; 
+    
+  }
+}

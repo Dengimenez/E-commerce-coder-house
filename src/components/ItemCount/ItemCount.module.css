@@ -1,0 +1,49 @@
+.ItemCount{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+  }
+  .ItemCount button, .agregar-al-carrito, .enviar {
+    background-color: var(--clr-main);
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    color: rgb(7, 7, 7);
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+    line-height: 1;
+    border: 2px solid var(--clr-main);
+    transition: .2s;
+  }
+  .ItemCount button:hover, .agregar-al-carrito:hover, .enviar:hover {
+    background-color: white;
+    color: rgb(241, 16, 16);
+  }
+  
+  
+  
+  .agregar {
+    background-color: #037872; 
+    color: #fff;
+    padding: 12px; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    border: none; 
+    margin-top: 16px; 
+    width: 100%; 
+    border-radius: 4px;
+    transition: background-color 0.3s; 
+  
+    
+    &:hover {
+      background-color: #ff0303; 
+    }
+  }
